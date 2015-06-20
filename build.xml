@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
-<project name="Javascript compress project" basedir="D:\cocos2d-js-v3.2\cocos2d-js-v3.2\frameworks\cocos2d-html5\learning\" default="compile">
+<project name="Javascript compress project" basedir="D:\cocos2djs\cocos2d-js-v3.2\cocos2d-js-v3.2\frameworks\cocos2d-html5\learning" default="compile">
 
     <taskdef name="jscomp" classname="com.google.javascript.jscomp.ant.CompileTask"
-             classpath="D:\cocos2d-js-v3.2\cocos2d-js-v3.2\tools\cocos2d-console\plugins\project_compile\build_web/bin/compiler-1.7.jar"/>
+             classpath="D:\cocos2d-x-3.3\tools\cocos2d-console\plugins\project_compile\build_web/bin/compiler-1.7.jar"/>
 
     <target name="compile">
         <jscomp compilationLevel="simple" 
                 warning="quiet"
                 debug="false" 
-                output="D:\cocos2d-js-v3.2\cocos2d-js-v3.2\frameworks\cocos2d-html5\learning\publish\html5/game.min.js"
+                output="D:\cocos2djs\cocos2d-js-v3.2\cocos2d-js-v3.2\frameworks\cocos2d-html5\learning\publish\html5/game.min.js"
                 languagein="ECMASCRIPT5"
                 
                 >
-            <sources dir="D:\cocos2d-js-v3.2\cocos2d-js-v3.2\frameworks\cocos2d-html5">
+            <sources dir="D:\cocos2djs\cocos2d-js-v3.2\cocos2d-js-v3.2\frameworks\cocos2d-html5">
                 <file name="CCBoot.js"/>
                 <file name="CCDebugger.js"/>
                 <file name="cocos2d/core/utils/BinaryLoader.js"/>
@@ -176,6 +176,7 @@
                 <file name="src/GameUI.js"/>
                 <file name="src/Candy.js"/>
                 <file name="src/Storage.js"/>
+                <file name="src/WeixinApi.js"/>
                 <file name="main.js"/>
 
             </sources>
